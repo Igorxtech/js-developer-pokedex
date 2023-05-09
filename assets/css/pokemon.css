@@ -1,0 +1,97 @@
+.pokemonDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-transform: capitalize;
+}
+
+.pokemonDetail .tableDetail {
+    width: 50vw;
+    margin: 1rem;
+    padding: 1rem;
+    border: .5rem solid #fff;
+    border-radius: 1rem;
+    border-spacing: 1rem;
+    list-style: none;
+
+}
+
+#pokemonStats {
+    
+}
+
+.pokemonDetail .types {
+    color: #fff;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+}
+
+#pokemonDetail {
+    width: 70vw;
+    margin: 0 auto
+}
+
+.photo {
+    width: 19vw;
+    margin: 1rem;
+}
+
+.numberDetail {
+    text-align: right;
+    position: relative;
+    left: 40%;
+}
+
+.nameDetail {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 767px) {
+    .tableDetail {
+        display: block;
+        position: relative;
+        width: 100%;
+      }
+      
+      .tableDetail tbody,
+      .tableDetail th,
+      .tableDetail thead,
+      .tableDetail td,
+      .tableDetail tr {
+        display: block;
+      }
+
+    .pokemonDetail .nameDetail {
+        font-size: 1.2rem;
+    }
+
+    .pokemonDetail .types {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .pokemonDetail .tableDetail {
+        border: none;
+    
+    }
+
+    .pokemonDetail .nameDetail {
+        font-size: 1rem;
+    }
+
+    .pokemonDetail .types {
+        font-size: 1rem;
+    }
+
+
+    
+}
